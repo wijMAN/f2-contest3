@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <style>
+      body {
+        background-color: rgb(54, 54, 54);
+        color: aliceblue;
+        font-size: large;
+      }
+      input {
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Sign Up Form</h1>
+    <fieldset>
+      <legend>FORM</legend>
+      <table>
+        <tr>
+          <td>Name</td>
+          <td><input type="text" placeholder="Name" id="naam" required /></td>
+        </tr>
+
+        <tr>
+          <td>Email</td>
+          <td>
+            <input type="email" id="mail" placeholder="Email" required />
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" name="" id="pass1" required /></td>
+        </tr>
+        <tr>
+          <td>Confirm Password</td>
+          <td><input type="password" name="" id="pass2" required /></td>
+        </tr>
+        <tr>
+          <td>
+            <button type="submit" onclick="fun1()">SUBMIT</button>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <p id="warn" style="color: rgb(243, 103, 103)"></p>
+    <p id="great" style="color: greenyellow"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
